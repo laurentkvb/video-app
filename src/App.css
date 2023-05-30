@@ -1,0 +1,22 @@
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-tile-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.video-tile:hover {
+  cursor: pointer;
+}
+
+.video-tile img,
+.video-tile video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
