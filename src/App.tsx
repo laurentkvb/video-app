@@ -20,6 +20,7 @@ export const App: FC = () => {
 
   return (
     <div className="app">
+      <h1>Video app</h1>
       <div className="video-gallery">
         {videos.map((video) => (
           <VideoTile
