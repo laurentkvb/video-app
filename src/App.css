@@ -1,16 +1,27 @@
+html,
+body {
+  background-color: grey;
+}
+.app h1 {
+  color: white;
+}
+.app h2 {
+  color: white;
+}
+#root {
+  align-self: flex-start;
+}
+
+.spinner {
+  display: flex;
+  justify-items: center;
+}
 .video-gallery {
   display: flex;
   flex-wrap: wrap;
 }
 
-html,body {
-  background-color: darkslategray;
-}
-.app h1 {
-  color: white;
-}
-
-.video-gallery>* {
+.video-gallery > * {
   flex: 0 0 25%;
   margin-bottom: -10px;
   height: 100%;
@@ -18,25 +29,24 @@ html,body {
 
 /* Mobile devices */
 @media (max-width: 767px) {
-  .video-gallery>* {
+  .video-gallery > * {
     flex-basis: 100%;
   }
 }
 
 /* Tablet Devices (landscape) */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .video-gallery>* {
+  .video-gallery > * {
     flex-basis: 33.33%;
   }
 }
 
 /* Tablet Devices (portrait) */
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
-  .video-gallery>* {
+  .video-gallery > * {
     flex-basis: 50%;
   }
 }
-
 
 .video-tile {
   width: 100%;
